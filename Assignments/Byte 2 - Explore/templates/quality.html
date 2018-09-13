@@ -46,28 +46,56 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+        <p>This is a dataset that tracks nutritional information across several fast food items. I wanted to compare the average of serving sizes, calories and trans fat content across several fast food brands.</a></p>
       </div>
 
     
       <div class="page-header">
-	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<h2>Is the data complete? If not, what is missing and what concerns does it raise?
+  </h2>
+	<p>
+
+  There were a couple of issues with the data.
+  The serving size and trans fat quantitites for some food portions was not mentioned.
+  Nutritional information varies significantly by serving sizes. If there are any outliers in terms of serving sizes(some brands just serving bigger portions), it would skew the rest of the analysis. 
+
+  Transfat is one of the leading factors correlated with heart disease. Since that was pertinent to my analysis, I decided to also discard rows without it.
+
+  Ideally, I would have a complete dataset with all macro-nutrient information. However, for the purposes of my analysis, the rest of the data was sufficient.
+
+</p>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<p>Yes, the data is coherent. </p>
+
+  <img src="https://i.imgur.com/FsdPMml.png?1" alt="Graph about calories">
+
+  <img src="https://i.imgur.com/vxf6LwM.png" alt="Graph about serving size">
+
+  <img src="https://i.imgur.com/DvXrpU5.png" alt="Graph about transfat">
+
+  <p>
+
+  As one would expect, serving sizes are more or less consistent across brands with the exception of White Castle, which markets itself for it's sliders.
+
+  Relative to serving size, no significant disparity can be observed amongst most brands with the exception of Subway.
+  A plausible explanation for this may be that Subway markets itself as a brand for the health conscious.
+
+  Certain brands still have trans fat in trace quantities.
+
+  </p>
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+	<p>Yes. 
+  A random sample of 20 rows were verified against MyFitnessPal, another application that tracks nutritional information. No significant disparity was observed. </p>
+
       </div>
+
+   
 
     </div> <!-- /container -->
 
